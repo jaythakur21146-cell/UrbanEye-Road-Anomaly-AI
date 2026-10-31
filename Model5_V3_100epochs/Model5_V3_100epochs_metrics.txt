@@ -1,0 +1,32 @@
+URBANEYE - MODEL 5 V3
+VERSION: APPROXIMATELY 100 EPOCHS
+Training time: 2.711 hours
+GPU: NVIDIA RTX 3050 6GB
+Dataset: UrbanEye_V3_RoadDamage
+
+OVERALL METRICS
+Precision: 0.823
+Recall: 0.758
+mAP50: 0.805
+mAP50-95: 0.447
+
+Test images: 1402
+Total instances: 4702
+Preprocessing: 0.3 ms
+Inference: 3.9 ms
+Postprocessing: 1.2 ms
+
+CLASS-WISE METRICS
+HMV: P=0.935, R=0.960, mAP50=0.971, mAP50-95=0.700
+LMV: P=0.913, R=0.929, mAP50=0.955, mAP50-95=0.595
+Pedestrian: P=0.857, R=0.778, mAP50=0.851, mAP50-95=0.423
+RoadDamages: P=0.659, R=0.419, mAP50=0.484, mAP50-95=0.191
+SpeedBump: P=0.731, R=0.849, mAP50=0.850, mAP50-95=0.412
+UnsurfacedRoad: P=0.841, R=0.611, mAP50=0.721, mAP50-95=0.360
+
+KNOWN ISSUES
+1. Water-filled potholes are sometimes missed.
+2. Some water-filled pothole detections have incorrect boxes or classifications.
+
+NEXT IMPROVEMENT TARGET
+Improve water-filled pothole detection and RoadDamages recall.

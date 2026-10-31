@@ -1,0 +1,6 @@
+path: D:/UrbanEye-AI/merged_datasets/UrbanEye_V3_RoadDamage
+train: train/images
+val: val/images
+test: test/images
+nc: 6
+names: ['HMV', 'LMV', 'Pedestrian', 'RoadDamages', 'SpeedBump', 'UnsurfacedRoad']
